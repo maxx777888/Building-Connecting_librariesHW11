@@ -1,6 +1,6 @@
 #include<iostream>
 #pragma once
-//#pragma comment (lib, "StaticLibHW11.1.lib")
+
 
 
 

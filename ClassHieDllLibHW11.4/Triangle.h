@@ -1,10 +1,10 @@
 #pragma once
 #include "Figure.h"
 
-#ifndef ClassHieDllLibHW11.4_EXPORTS
-#define Triangle_API __declspec(dllexport)
+#ifndef ClassHieDllLibHW114_EXPORTS
+#define Figure_API __declspec(dllexport)
 #else
-#define Triangle_API __declspec(dllimport)
+#define Figure_API __declspec(dllimport)
 #endif
 
 
@@ -12,7 +12,7 @@ class Triangle : public Figure//Создаем базовый класс Треугольник
 {
 public:
     Triangle();//Пустой конструктор
-    Triangle_API Triangle(int a_, int b_, int c_, int A_, int B_, int C_); //Конструктор базового класса 
+    Figure_API Triangle(int a_, int b_, int c_, int A_, int B_, int C_); //Конструктор базового класса 
     //Методы для получения информации о значении сторон и углов треугольника
     int get_a();//Метод возвращает значение стороны a
     int get_b();//Метод возвращает значение стороны b

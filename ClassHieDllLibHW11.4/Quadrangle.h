@@ -1,17 +1,17 @@
 #pragma once
 #include "Figure.h"
 
-#ifndef ClassHieDllLibHW11.4_EXPORTS
-#define Quadrangle_API __declspec(dllexport)
+#ifndef ClassHieDllLibHW114_EXPORTS
+#define Figure_API __declspec(dllexport)
 #else
-#define Quadrangle_API __declspec(dllimport)
+#define Figure_API __declspec(dllimport)
 #endif
 
 class Quadrangle : public Figure
 {
 public:
     Quadrangle();//Пустой конструктор
-    Quadrangle_API Quadrangle(int a_, int b_, int c_, int d_, int A_, int B_, int C_, int D_); //Конструктор базового класса 
+    Figure_API Quadrangle(int a_, int b_, int c_, int d_, int A_, int B_, int C_, int D_); //Конструктор базового класса 
     
     //Методы для получения информации о значении сторон и углов
     int get_a();//Метод возвращает значение стороны a
