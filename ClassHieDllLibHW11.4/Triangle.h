@@ -1,12 +1,6 @@
 #pragma once
 #include "Figure.h"
 
-#ifndef ClassHieDllLibHW114_EXPORTS
-#define Figure_API __declspec(dllexport)
-#else
-#define Figure_API __declspec(dllimport)
-#endif
-
 
 class Triangle : public Figure//Создаем базовый класс Треугольник 
 {

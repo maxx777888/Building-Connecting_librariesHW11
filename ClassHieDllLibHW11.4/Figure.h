@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-#ifndef ClassHieDllLibHW114_EXPORTS
+#ifdef ClassHieDllLibHW114_EXPORTS
 #define Figure_API __declspec(dllexport)
 #else
 #define Figure_API __declspec(dllimport)

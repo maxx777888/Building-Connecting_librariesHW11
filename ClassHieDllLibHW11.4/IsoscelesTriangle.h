@@ -1,11 +1,7 @@
 #pragma once
 #include "Triangle.h"
 
-#ifndef ClassHieDllLibHW114_EXPORTS
-#define Figure_API __declspec(dllexport)
-#else
-#define Figure_API __declspec(dllimport)
-#endif
+
 class IsoscelesTriangle : public Triangle
 {
 public:
